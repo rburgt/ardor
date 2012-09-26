@@ -8,51 +8,86 @@
 
     <meta name="viewport" content="width=device-width">
 
+    <link rel="stylesheet" href="css/sample.css">
     <link rel="stylesheet" href="css/1-basic.css">
+
+    <style>
+    </style>
 </head>
 <body>
-
 	<div class="ardor-wrapper">
-		<div class="ardor">
+		<div class="ardor row" style="height: 400px;">
+
+
 			<div class="slide">
 	            <div class="column split fromright">
 	                slide 1
 	            </div>
 	        </div>
 	        
-	        <div class="slide">
-	            <div class="column split fromright">
-	                test 2
-	            </div>
-	            
-	            <div class="column split fromright first">
-	                test 3
-	            </div>
 
-	            <div class="column split fromright second">
-	                test 2
-	            </div>
-	            
-	            <div class="column split fromright third">
-	                test 3
-	            </div>
-	            
-	            <div class="column split fromright fourth">
-	                test 3
-	            </div>
+	        <div class="slide">
+                <div class="row">
+    	            <div class="column six fromright">
+    	                test 1
+    	            </div>
+    	            
+    	            <div class="column six">
+                        <div class="row">
+                            <div class="column twelve fromright first">
+                                Dit is een regel die oversteigend zou moeten zijn tegenover de regels hier onder
+                            </div>
+
+                            <div class="column six fromright first">
+                                test 2
+                            </div>
+                            
+                            <div class="column six fromright second">
+                                test 3
+                            </div>
+                        </div>
+    	            </div>
+                </div>
 	        </div>
+
+
+
+            <div class="slide">
+                <div class="column split fromright">
+                    test 2
+                </div>
+                
+                <div class="column split fromright first">
+                    test 3
+                </div>
+
+                <div class="column split fromright second">
+                    test 2
+                </div>
+                
+                <div class="column split fromright third">
+                    test 3
+                </div>
+                
+                <div class="column split fromright fourth">
+                    test 3
+                </div>
+            </div>
+
+            
 		</div>
 	</div>
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="javascript/jquery-1.7.2.min.js"><\/script>')</script>
-
     <script src="../src/javascript/ardor.js"></script>
     <script>
-    	$(function(){
-    		$('.ardor').ardor();
-    	});
+    	window.onload = function(){
+            carousel = new Ardor();
+
+            setTimeout( carousel.next.bind(carousel), 1 * 3000 );
+
+            //setInterval( carousel.next.bind(carousel), 1 * 3000 );
+        };
     </script>
 </body>
 </html>

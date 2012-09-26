@@ -1,5 +1,6 @@
 .ardor {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .ardor .slide {
     position: absolute;
     z-index: -1;
