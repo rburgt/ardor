@@ -1,0 +1,71 @@
+@import values
+
+$ardor-vendor-lock: false
+
+@mixin ardor-vendor-prefix ( $key, $value )
+    @if $ardor-vendor-lock == false
+        -webkit-#{$key} : $value
+        -moz-#{$key} : $value
+        -ms-#{$key} : $value
+        -o-#{$key} : $value
+        #{$key} : $value
+    @else
+        #{$ardor-vendor-lock}#{$key} : $value
+
+@mixin ardor-keyframes ( $name )
+    $ardor-vendor-lock : '-webkit-'
+    @-webkit-keyframes #{$name}
+        @content
+    
+    $ardor-vendor-lock : '-moz-'
+    @-moz-keyframes #{$name}
+        @content
+    
+    $ardor-vendor-lock : '-ms-'
+    @-ms-keyframes #{$name}
+        @content
+    
+    $ardor-vendor-lock : '-o-'
+    @-o-keyframes #{$name}
+        @content
+    
+    $ardor-vendor-lock : ''
+    @keyframes #{$name} 
+        @content
+    
+    $ardor-vendor-lock: false
+
+@mixin ardor-keyframes-in($selector, $name, $base-duration: $ardor-duration-active, $parentSelector: '.ardor .slide.active')
+    #{$parentSelector} #{$selector}
+        +ardor-vendor-prefix(animation, $name $base-duration 1 cubic-bezier(0.680, -0.550, 0.265, 1.550))
+
+    +ardor-keyframes($name)
+        0%
+            @content
+
+    @each $ardor-delay in $ardor-delays
+        $animation-duration: nth($ardor-delay, 2) + $base-duration
+        $animation-name: #{$name}#{nth($ardor-delay, 1)}
+
+        #{$parentSelector} #{$selector}.#{nth($ardor-delay, 1)}
+            +ardor-vendor-prefix(animation-name, $animation-name)
+            +ardor-vendor-prefix(animation-duration, $animation-duration)
+
+        +ardor-keyframes($animation-name)
+            0%
+                @content
+            #{(nth($ardor-delay, 2)/$animation-duration) * 100% }
+                @content
+
+
+@mixin ardor-keyframes-out($selector, $name, $base-duration: $ardor-duration-inactive, $parentSelector: '.ardor .slide.inactive')
+    #{$parentSelector} #{$selector}
+        +ardor-vendor-prefix(animation, $name $base-duration 1 cubic-bezier(0.680, -0.550, 0.265, 1.550))
+
+    +ardor-keyframes($name)
+        to
+            @content
+
+    @each $ardor-delay in $ardor-delays
+        #{$parentSelector} #{$selector}.#{nth($ardor-delay, 1)}
+            +ardor-vendor-prefix( animation-delay, nth($ardor-delay, 2) )

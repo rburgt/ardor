@@ -1,0 +1,8 @@
+@import ../mixins
+
+// translate from the right of the screen
+@include ardor-keyframes-in('.fromright', fromrightin)
+    +ardor-vendor-prefix( transform, translate(300%) )
+
+@include ardor-keyframes-out('.fromright', fromrightout)
+    +ardor-vendor-prefix( transform, translate(-200%) )

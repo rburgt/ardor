@@ -1,0 +1,286 @@
+.ardor {
+  position: relative; }
+  .ardor .slide {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all 600ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -moz-transition: all 600ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -ms-transition: all 600ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -o-transition: all 600ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition: all 600ms cubic-bezier(0.755, 0.05, 0.855, 0.06); }
+    .ardor .slide.active {
+      z-index: 0;
+      opacity: 1; }
+
+.ardor .slide.active .fromright {
+  -webkit-animation: fromrightin 800ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: fromrightin 800ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-animation: fromrightin 800ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-animation: fromrightin 800ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: fromrightin 800ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+@-webkit-keyframes fromrightin {
+  0% {
+    -webkit-transform: translate(300%); } }
+
+@-moz-keyframes fromrightin {
+  0% {
+    -moz-transform: translate(300%); } }
+
+@-ms-keyframes fromrightin {
+  0% {
+    -ms-transform: translate(300%); } }
+
+@-o-keyframes fromrightin {
+  0% {
+    -o-transform: translate(300%); } }
+
+@keyframes fromrightin {
+  0% {
+    transform: translate(300%); } }
+
+.ardor .slide.active .fromright.first {
+  -webkit-animation-name: fromrightinfirst;
+  -moz-animation-name: fromrightinfirst;
+  -ms-animation-name: fromrightinfirst;
+  -o-animation-name: fromrightinfirst;
+  animation-name: fromrightinfirst;
+  -webkit-animation-duration: 1100ms;
+  -moz-animation-duration: 1100ms;
+  -ms-animation-duration: 1100ms;
+  -o-animation-duration: 1100ms;
+  animation-duration: 1100ms; }
+
+@-webkit-keyframes fromrightinfirst {
+  0% {
+    -webkit-transform: translate(300%); }
+
+  27.27273% {
+    -webkit-transform: translate(300%); } }
+
+@-moz-keyframes fromrightinfirst {
+  0% {
+    -moz-transform: translate(300%); }
+
+  27.27273% {
+    -moz-transform: translate(300%); } }
+
+@-ms-keyframes fromrightinfirst {
+  0% {
+    -ms-transform: translate(300%); }
+
+  27.27273% {
+    -ms-transform: translate(300%); } }
+
+@-o-keyframes fromrightinfirst {
+  0% {
+    -o-transform: translate(300%); }
+
+  27.27273% {
+    -o-transform: translate(300%); } }
+
+@keyframes fromrightinfirst {
+  0% {
+    transform: translate(300%); }
+
+  27.27273% {
+    transform: translate(300%); } }
+
+.ardor .slide.active .fromright.second {
+  -webkit-animation-name: fromrightinsecond;
+  -moz-animation-name: fromrightinsecond;
+  -ms-animation-name: fromrightinsecond;
+  -o-animation-name: fromrightinsecond;
+  animation-name: fromrightinsecond;
+  -webkit-animation-duration: 1300ms;
+  -moz-animation-duration: 1300ms;
+  -ms-animation-duration: 1300ms;
+  -o-animation-duration: 1300ms;
+  animation-duration: 1300ms; }
+
+@-webkit-keyframes fromrightinsecond {
+  0% {
+    -webkit-transform: translate(300%); }
+
+  38.46154% {
+    -webkit-transform: translate(300%); } }
+
+@-moz-keyframes fromrightinsecond {
+  0% {
+    -moz-transform: translate(300%); }
+
+  38.46154% {
+    -moz-transform: translate(300%); } }
+
+@-ms-keyframes fromrightinsecond {
+  0% {
+    -ms-transform: translate(300%); }
+
+  38.46154% {
+    -ms-transform: translate(300%); } }
+
+@-o-keyframes fromrightinsecond {
+  0% {
+    -o-transform: translate(300%); }
+
+  38.46154% {
+    -o-transform: translate(300%); } }
+
+@keyframes fromrightinsecond {
+  0% {
+    transform: translate(300%); }
+
+  38.46154% {
+    transform: translate(300%); } }
+
+.ardor .slide.active .fromright.third {
+  -webkit-animation-name: fromrightinthird;
+  -moz-animation-name: fromrightinthird;
+  -ms-animation-name: fromrightinthird;
+  -o-animation-name: fromrightinthird;
+  animation-name: fromrightinthird;
+  -webkit-animation-duration: 1500ms;
+  -moz-animation-duration: 1500ms;
+  -ms-animation-duration: 1500ms;
+  -o-animation-duration: 1500ms;
+  animation-duration: 1500ms; }
+
+@-webkit-keyframes fromrightinthird {
+  0% {
+    -webkit-transform: translate(300%); }
+
+  46.66667% {
+    -webkit-transform: translate(300%); } }
+
+@-moz-keyframes fromrightinthird {
+  0% {
+    -moz-transform: translate(300%); }
+
+  46.66667% {
+    -moz-transform: translate(300%); } }
+
+@-ms-keyframes fromrightinthird {
+  0% {
+    -ms-transform: translate(300%); }
+
+  46.66667% {
+    -ms-transform: translate(300%); } }
+
+@-o-keyframes fromrightinthird {
+  0% {
+    -o-transform: translate(300%); }
+
+  46.66667% {
+    -o-transform: translate(300%); } }
+
+@keyframes fromrightinthird {
+  0% {
+    transform: translate(300%); }
+
+  46.66667% {
+    transform: translate(300%); } }
+
+.ardor .slide.active .fromright.fourth {
+  -webkit-animation-name: fromrightinfourth;
+  -moz-animation-name: fromrightinfourth;
+  -ms-animation-name: fromrightinfourth;
+  -o-animation-name: fromrightinfourth;
+  animation-name: fromrightinfourth;
+  -webkit-animation-duration: 1700ms;
+  -moz-animation-duration: 1700ms;
+  -ms-animation-duration: 1700ms;
+  -o-animation-duration: 1700ms;
+  animation-duration: 1700ms; }
+
+@-webkit-keyframes fromrightinfourth {
+  0% {
+    -webkit-transform: translate(300%); }
+
+  52.94118% {
+    -webkit-transform: translate(300%); } }
+
+@-moz-keyframes fromrightinfourth {
+  0% {
+    -moz-transform: translate(300%); }
+
+  52.94118% {
+    -moz-transform: translate(300%); } }
+
+@-ms-keyframes fromrightinfourth {
+  0% {
+    -ms-transform: translate(300%); }
+
+  52.94118% {
+    -ms-transform: translate(300%); } }
+
+@-o-keyframes fromrightinfourth {
+  0% {
+    -o-transform: translate(300%); }
+
+  52.94118% {
+    -o-transform: translate(300%); } }
+
+@keyframes fromrightinfourth {
+  0% {
+    transform: translate(300%); }
+
+  52.94118% {
+    transform: translate(300%); } }
+
+.ardor .slide.inactive .fromright {
+  -webkit-animation: fromrightout 600ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: fromrightout 600ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-animation: fromrightout 600ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-animation: fromrightout 600ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: fromrightout 600ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+@-webkit-keyframes fromrightout {
+  to {
+    -webkit-transform: translate(-200%); } }
+
+@-moz-keyframes fromrightout {
+  to {
+    -moz-transform: translate(-200%); } }
+
+@-ms-keyframes fromrightout {
+  to {
+    -ms-transform: translate(-200%); } }
+
+@-o-keyframes fromrightout {
+  to {
+    -o-transform: translate(-200%); } }
+
+@keyframes fromrightout {
+  to {
+    transform: translate(-200%); } }
+
+.ardor .slide.inactive .fromright.first {
+  -webkit-animation-delay: 300ms;
+  -moz-animation-delay: 300ms;
+  -ms-animation-delay: 300ms;
+  -o-animation-delay: 300ms;
+  animation-delay: 300ms; }
+
+.ardor .slide.inactive .fromright.second {
+  -webkit-animation-delay: 500ms;
+  -moz-animation-delay: 500ms;
+  -ms-animation-delay: 500ms;
+  -o-animation-delay: 500ms;
+  animation-delay: 500ms; }
+
+.ardor .slide.inactive .fromright.third {
+  -webkit-animation-delay: 700ms;
+  -moz-animation-delay: 700ms;
+  -ms-animation-delay: 700ms;
+  -o-animation-delay: 700ms;
+  animation-delay: 700ms; }
+
+.ardor .slide.inactive .fromright.fourth {
+  -webkit-animation-delay: 900ms;
+  -moz-animation-delay: 900ms;
+  -ms-animation-delay: 900ms;
+  -o-animation-delay: 900ms;
+  animation-delay: 900ms; }
