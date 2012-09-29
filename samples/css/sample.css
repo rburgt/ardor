@@ -1,53 +1,74 @@
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+/*
+Syntax error: Invalid variable: "$grid -column-names: (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve) !default".
+        on line 2 of sass/sample/_grid.sass
+        from line 2 of sass/sample.sass
 
-body,
-html {
-  padding: 0;
-  margin: 0; }
+1: // grid system
+2: $grid -column-names: (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve) !default
+3: 
+4: .row
+5:   width: 100%
+6:   max-width: 1024px
+7: 
 
-.row {
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  letter-spacing: -0.31em;
-  word-spacing: -0.43em; }
-
-.column {
-  display: inline-block;
-  letter-spacing: normal;
-  word-spacing: normal;
-  vertical-align: top;
-  min-height: 1px;
-  border: solid transparent;
-  border-width: 0 10px; }
-  .column.one {
-    width: 8.33333%; }
-  .column.two {
-    width: 16.66667%; }
-  .column.three {
-    width: 25%; }
-  .column.four {
-    width: 33.33333%; }
-  .column.five {
-    width: 41.66667%; }
-  .column.six {
-    width: 50%; }
-  .column.seven {
-    width: 58.33333%; }
-  .column.eight {
-    width: 66.66667%; }
-  .column.nine {
-    width: 75%; }
-  .column.ten {
-    width: 83.33333%; }
-  .column.eleven {
-    width: 91.66667%; }
-  .column.twelve {
-    width: 100%; }
-
-@media screen and (max-width: 786px) {
-  .column {
-    width: 100% !important; } }
+Backtrace:
+sass/sample/_grid.sass:2
+sass/sample.sass:2
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/engine.rb:625:in `parse_variable'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/engine.rb:562:in `parse_line'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/engine.rb:471:in `build_tree'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/engine.rb:490:in `append_children'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/engine.rb:489:in `each'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/engine.rb:489:in `append_children'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/engine.rb:345:in `_to_tree'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/engine.rb:274:in `to_tree'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:221:in `visit_import'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:97:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:118:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:105:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:125:in `visit_root'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:97:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/engine.rb:315:in `_render'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/engine.rb:262:in `render'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/plugin/compiler.rb:340:in `update_stylesheet'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/plugin/compiler.rb:202:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/plugin/compiler.rb:200:in `each'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/plugin/compiler.rb:200:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/plugin/compiler.rb:298:in `watch'
+/var/lib/gems/1.8/gems/sass-3.2.0/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/var/lib/gems/1.8/gems/sass-3.2.0/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/var/lib/gems/1.8/gems/sass-3.2.0/vendor/listen/lib/listen/multi_listener.rb:95:in `initialize_adapter'
+/var/lib/gems/1.8/gems/sass-3.2.0/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/var/lib/gems/1.8/gems/sass-3.2.0/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/var/lib/gems/1.8/gems/sass-3.2.0/vendor/listen/lib/listen/adapters/polling.rb:31:in `start'
+/var/lib/gems/1.8/gems/sass-3.2.0/vendor/listen/lib/listen/adapters/polling.rb:31:in `initialize'
+/var/lib/gems/1.8/gems/sass-3.2.0/vendor/listen/lib/listen/adapters/polling.rb:31:in `new'
+/var/lib/gems/1.8/gems/sass-3.2.0/vendor/listen/lib/listen/adapters/polling.rb:31:in `start'
+/var/lib/gems/1.8/gems/sass-3.2.0/vendor/listen/lib/listen/multi_listener.rb:44:in `start'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/plugin/compiler.rb:306:in `watch'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/plugin.rb:107:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/exec.rb:431:in `watch_or_update'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/exec.rb:302:in `process_result'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/var/lib/gems/1.8/gems/sass-3.2.0/bin/sass:8
+/usr/local/bin/sass:19:in `load'
+/usr/local/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid variable: \"$grid -column-names: (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve) !default\".\A         on line 2 of sass/sample/_grid.sass\A         from line 2 of sass/sample.sass\A \A 1: // grid system\A 2: $grid -column-names: (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve) !default\A 3: \A 4: .row\A 5:   width: 100%\A 6:   max-width: 1024px\A 7: "; }
