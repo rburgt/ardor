@@ -1,9 +1,10 @@
 // grid system
-$grid -column-names: (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve) !default
+$grid-column-names: (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve) !default
+$grid-row-maxwidth: 1024px !default
 
 .row
   width: 100%
-  max-width: 1024px
+  max-width: $grid-row-maxwidth
 
   margin: 0 auto
 
@@ -22,7 +23,7 @@ $grid -column-names: (one, two, three, four, five, six, seven, eight, nine, ten,
   border-width: 0 10px
 
   $column-count: length( $grid-column-names )
-
+  
   @each $column-name in $grid-column-names
     &.#{$column-name}
       width: ( index($grid-column-names, $column-name) / $column-count ) * 100%
@@ -30,5 +31,4 @@ $grid -column-names: (one, two, three, four, five, six, seven, eight, nine, ten,
 
 @media screen and (max-width: 786px)
   .column
-    width: 100% !important
     width: 100% !important

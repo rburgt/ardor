@@ -1,4 +1,20 @@
+// generic sample setup
+@import sample/normalize
+
 // import the ardor component styling
 @import ../src/sass/component
 
+// add the fromright effect
 @import ../src/sass/effect/fromright
+
+// the minimum amount of styling ardor needs is
+// the dimensions to be displayed in, the component
+// styling will determine the default behaviour
+.ardor
+  width: 400px
+  height: 200px
+
+  // basic styling
+  margin: 10px auto
+  border: 1px solid black
+  padding: 10px

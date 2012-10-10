@@ -1,93 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
- 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="UTF-8">
 
-    <title></title>
+  <title>Ardor sample 1</title>
 
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="css/sample.css">
-    <link rel="stylesheet" href="css/1-basic.css">
-
-    <style>
-    </style>
+  <link rel="stylesheet" href="css/1-basic.css">
 </head>
 <body>
-	<div class="ardor-wrapper">
-		<div class="ardor row" style="height: 400px;">
 
+  <div class="ardor">
 
-			<div class="slide">
-	            <div class="column split fromright">
-	                slide 1
-	            </div>
-	        </div>
-	        
+    <div class="slide">
+      Slide 1/2
+      <ul>
+        <li class="fromright first">First item</li>
+        <li class="fromright second">Second item</li>
+        <li class="fromright third">Third item</li>
+        <li class="fromright fourth">Fourth item</li>
+      </ul>
+    </div>
 
-	        <div class="slide">
-                <div class="row">
-    	            <div class="column six fromright">
-    	                test 1
-    	            </div>
-    	            
-    	            <div class="column six">
-                        <div class="row">
-                            <div class="column twelve fromright first">
-                                Dit is een regel die oversteigend zou moeten zijn tegenover de regels hier onder
-                            </div>
+    <div class="slide">
+      Slide 2/2
+      <ul>
+        <li class="fromright first">item one</li>
+        <li class="fromright second">item two</li>
+        <li class="fromright third">item three</li>
+        <li class="fromright fourth">item four</li>
+      </ul>
+    </div>
 
-                            <div class="column six fromright first">
-                                test 2
-                            </div>
-                            
-                            <div class="column six fromright second">
-                                test 3
-                            </div>
-                        </div>
-    	            </div>
-                </div>
-	        </div>
+  </div>
 
+  <!-- include polyfill for browsersupport -->
+  <script src="javascript/classlist-polyfill.js"></script>
 
+  <!-- include ardor slide handler -->
+  <script src="../src/javascript/ardor.js"></script>
+  <script>
+    window.onload = function(){
 
-            <div class="slide">
-                <div class="column split fromright">
-                    test 2
-                </div>
-                
-                <div class="column split fromright first">
-                    test 3
-                </div>
+      // newly created ardor instance, when initiated 
+      // in global scope, its assumed only one instance 
+      // will be available
+      var carousel = new Ardor();
 
-                <div class="column split fromright second">
-                    test 2
-                </div>
-                
-                <div class="column split fromright third">
-                    test 3
-                </div>
-                
-                <div class="column split fromright fourth">
-                    test 3
-                </div>
-            </div>
+      // changes slide every three seconds
+      setInterval( carousel.next.bind(carousel), 1 * 3000 );
 
-            
-		</div>
-	</div>
-
-
-    <script src="../src/javascript/ardor.js"></script>
-    <script>
-    	window.onload = function(){
-            carousel = new Ardor();
-
-            setTimeout( carousel.next.bind(carousel), 1 * 3000 );
-
-            //setInterval( carousel.next.bind(carousel), 1 * 3000 );
-        };
-    </script>
+      // put in global scope for debugging
+      window.carousel = carousel;
+    };
+  </script>
 </body>
 </html>

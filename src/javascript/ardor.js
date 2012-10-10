@@ -6,7 +6,7 @@
  * - Element.prototype.classList
  *
  * @author  Rob van der Burgt <rburgt@gmail.com>
- */
+ */ 
 (function(){
   var defaultConfig = {
     slideSelector : '.slide',
@@ -40,7 +40,14 @@
 
     detectSlideElements : function(){
       var slideElements = this._node.querySelectorAll( this._slideSelector );
-      slideElements = Array.prototype.slice.call( slideElements, 0 );
+      
+      slideElements = (function(){
+        var results = [];
+        for (var i = 0, l = slideElements.length; i < l; i++) {
+          results.push(slideElements[i]);
+        }
+        return results;
+      })();
 
       var activateSlideClass = this._activeCls,
         slideCount = slideElements.length,

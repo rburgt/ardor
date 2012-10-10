@@ -1,6 +1,24 @@
+/* line 3, ../sass/sample/_normalize.sass */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 8, ../sass/sample/_normalize.sass */
+html {
+  font-size: 100%; }
+
+/* line 11, ../sass/sample/_normalize.sass */
+body,
+html {
+  padding: 0;
+  margin: 0; }
+
+/* line 3, /home/rburgt/Documents/ardor/samples/../src/sass/_component.sass */
 .ardor {
   position: relative;
   overflow: hidden; }
+  /* line 7, /home/rburgt/Documents/ardor/samples/../src/sass/_component.sass */
   .ardor .slide {
     position: absolute;
     z-index: -1;
@@ -12,10 +30,12 @@
     -ms-transition: all 600ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
     -o-transition: all 600ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition: all 600ms cubic-bezier(0.755, 0.05, 0.855, 0.06); }
+    /* line 18, /home/rburgt/Documents/ardor/samples/../src/sass/_component.sass */
     .ardor .slide.active {
       z-index: 0;
       opacity: 1; }
 
+/* line 39, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
 .ardor .slide.active .fromright {
   -webkit-animation: fromrightin 800ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -moz-animation: fromrightin 800ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -24,25 +44,31 @@
   animation: fromrightin 800ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 @-webkit-keyframes fromrightin {
+  /* line 43, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -webkit-transform: translate(300%); } }
 
 @-moz-keyframes fromrightin {
+  /* line 43, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -moz-transform: translate(300%); } }
 
 @-ms-keyframes fromrightin {
+  /* line 43, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -ms-transform: translate(300%); } }
 
 @-o-keyframes fromrightin {
+  /* line 43, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -o-transform: translate(300%); } }
 
 @keyframes fromrightin {
+  /* line 43, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     transform: translate(300%); } }
 
+/* line 50, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
 .ardor .slide.active .fromright.first {
   -webkit-animation-name: fromrightinfirst;
   -moz-animation-name: fromrightinfirst;
@@ -56,40 +82,51 @@
   animation-duration: 1100ms; }
 
 @-webkit-keyframes fromrightinfirst {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -webkit-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   27.27273% {
     -webkit-transform: translate(300%); } }
 
 @-moz-keyframes fromrightinfirst {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -moz-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   27.27273% {
     -moz-transform: translate(300%); } }
 
 @-ms-keyframes fromrightinfirst {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -ms-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   27.27273% {
     -ms-transform: translate(300%); } }
 
 @-o-keyframes fromrightinfirst {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -o-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   27.27273% {
     -o-transform: translate(300%); } }
 
 @keyframes fromrightinfirst {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   27.27273% {
     transform: translate(300%); } }
 
+/* line 50, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
 .ardor .slide.active .fromright.second {
   -webkit-animation-name: fromrightinsecond;
   -moz-animation-name: fromrightinsecond;
@@ -103,40 +140,51 @@
   animation-duration: 1300ms; }
 
 @-webkit-keyframes fromrightinsecond {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -webkit-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   38.46154% {
     -webkit-transform: translate(300%); } }
 
 @-moz-keyframes fromrightinsecond {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -moz-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   38.46154% {
     -moz-transform: translate(300%); } }
 
 @-ms-keyframes fromrightinsecond {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -ms-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   38.46154% {
     -ms-transform: translate(300%); } }
 
 @-o-keyframes fromrightinsecond {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -o-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   38.46154% {
     -o-transform: translate(300%); } }
 
 @keyframes fromrightinsecond {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   38.46154% {
     transform: translate(300%); } }
 
+/* line 50, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
 .ardor .slide.active .fromright.third {
   -webkit-animation-name: fromrightinthird;
   -moz-animation-name: fromrightinthird;
@@ -150,40 +198,51 @@
   animation-duration: 1500ms; }
 
 @-webkit-keyframes fromrightinthird {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -webkit-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   46.66667% {
     -webkit-transform: translate(300%); } }
 
 @-moz-keyframes fromrightinthird {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -moz-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   46.66667% {
     -moz-transform: translate(300%); } }
 
 @-ms-keyframes fromrightinthird {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -ms-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   46.66667% {
     -ms-transform: translate(300%); } }
 
 @-o-keyframes fromrightinthird {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -o-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   46.66667% {
     -o-transform: translate(300%); } }
 
 @keyframes fromrightinthird {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   46.66667% {
     transform: translate(300%); } }
 
+/* line 50, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
 .ardor .slide.active .fromright.fourth {
   -webkit-animation-name: fromrightinfourth;
   -moz-animation-name: fromrightinfourth;
@@ -197,40 +256,51 @@
   animation-duration: 1700ms; }
 
 @-webkit-keyframes fromrightinfourth {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -webkit-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   52.94118% {
     -webkit-transform: translate(300%); } }
 
 @-moz-keyframes fromrightinfourth {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -moz-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   52.94118% {
     -moz-transform: translate(300%); } }
 
 @-ms-keyframes fromrightinfourth {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -ms-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   52.94118% {
     -ms-transform: translate(300%); } }
 
 @-o-keyframes fromrightinfourth {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     -o-transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   52.94118% {
     -o-transform: translate(300%); } }
 
 @keyframes fromrightinfourth {
+  /* line 55, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   0% {
     transform: translate(300%); }
 
+  /* line 57, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   52.94118% {
     transform: translate(300%); } }
 
+/* line 62, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
 .ardor .slide.inactive .fromright {
   -webkit-animation: fromrightout 600ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -moz-animation: fromrightout 600ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -239,25 +309,31 @@
   animation: fromrightout 600ms 1 cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 @-webkit-keyframes fromrightout {
+  /* line 66, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   to {
     -webkit-transform: translate(-200%); } }
 
 @-moz-keyframes fromrightout {
+  /* line 66, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   to {
     -moz-transform: translate(-200%); } }
 
 @-ms-keyframes fromrightout {
+  /* line 66, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   to {
     -ms-transform: translate(-200%); } }
 
 @-o-keyframes fromrightout {
+  /* line 66, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   to {
     -o-transform: translate(-200%); } }
 
 @keyframes fromrightout {
+  /* line 66, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
   to {
     transform: translate(-200%); } }
 
+/* line 70, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
 .ardor .slide.inactive .fromright.first {
   -webkit-animation-delay: 300ms;
   -moz-animation-delay: 300ms;
@@ -265,6 +341,7 @@
   -o-animation-delay: 300ms;
   animation-delay: 300ms; }
 
+/* line 70, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
 .ardor .slide.inactive .fromright.second {
   -webkit-animation-delay: 500ms;
   -moz-animation-delay: 500ms;
@@ -272,6 +349,7 @@
   -o-animation-delay: 500ms;
   animation-delay: 500ms; }
 
+/* line 70, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
 .ardor .slide.inactive .fromright.third {
   -webkit-animation-delay: 700ms;
   -moz-animation-delay: 700ms;
@@ -279,9 +357,18 @@
   -o-animation-delay: 700ms;
   animation-delay: 700ms; }
 
+/* line 70, /home/rburgt/Documents/ardor/samples/../src/sass/_mixins.sass */
 .ardor .slide.inactive .fromright.fourth {
   -webkit-animation-delay: 900ms;
   -moz-animation-delay: 900ms;
   -ms-animation-delay: 900ms;
   -o-animation-delay: 900ms;
   animation-delay: 900ms; }
+
+/* line 13, ../sass/1-basic.sass */
+.ardor {
+  width: 400px;
+  height: 200px;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 10px; }
